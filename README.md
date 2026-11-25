@@ -69,3 +69,9 @@ En las capturas disponibles no aparece evidencia suficiente para determinar cóm
 ## Conclusión
 
 El análisis permitió identificar a la víctima como `10.11.26.183` (`DESKTOP-B8TQK49`), con MAC `d0:57:7b:ce:fc:8b` y usuario `oboomwald`. La comunicación más relevante es el flujo TCP 77 hacia `194.180.191.64`, usando la ruta `/fakeurl.htm` y mostrando comandos compatibles con NetSupport. Con la evidencia de las capturas no es posible confirmar el vector inicial de infección, por lo que haría falta correlacionar el PCAP con registros y archivos del equipo afectado.
+
+## Máquina resuelta
+
+Captura de confirmación de la plataforma tras completar el reto Nematodos.
+
+![Confirmación de la máquina Nematodos resuelta](img/maquinaresueta.png)

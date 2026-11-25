@@ -32,7 +32,7 @@ Con el filtro `kerberos.msg_type == 13` revisé las respuestas `TGS-REP`. En el 
 
 ### 5. Identificar el hostname
 
-Apliqué `dhcp or nbns or kerberos` para revisar información de configuración y resolución de nombres de Windows. Los registros NBNS muestran `DESKTOP-B8TQK49` y `NEMOTODES`; el paquete 69 incluye el registro `DESKTOP-B8TQK49<20>`. Así identifiqué el hostname como `DESKTOP-B8TQK49`.
+Apliqué `dhcp or nbns or kerberos` para revisar información de configuración y resolución de nombres de Windows. Los registros NBNS muestran `DESKTOP-8BTQK49` y `NEMOTODES`; el paquete 69 incluye el registro `DESKTOP-8BTQK49<20>`. Así identifiqué el hostname como `DESKTOP-8BTQK49`.
 
 ![Registros NBNS con el hostname de la víctima](img/05_usuario_windows.png)
 
@@ -68,7 +68,7 @@ En las capturas disponibles no aparece evidencia suficiente para determinar cóm
 
 ## Conclusión
 
-El análisis permitió identificar a la víctima como `10.11.26.183` (`DESKTOP-B8TQK49`), con MAC `d0:57:7b:ce:fc:8b` y usuario `oboomwald`. La comunicación más relevante es el flujo TCP 77 hacia `194.180.191.64`, usando la ruta `/fakeurl.htm` y mostrando comandos compatibles con NetSupport. Con la evidencia de las capturas no es posible confirmar el vector inicial de infección, por lo que haría falta correlacionar el PCAP con registros y archivos del equipo afectado.
+El análisis permitió identificar a la víctima como `10.11.26.183` (`DESKTOP-8BTQK49`), con MAC `d0:57:7b:ce:fc:8b` y usuario `oboomwald`. La comunicación más relevante es el flujo TCP 77 hacia `194.180.191.64`, usando la ruta `/fakeurl.htm` y mostrando comandos compatibles con NetSupport. Con la evidencia de las capturas no es posible confirmar el vector inicial de infección, por lo que haría falta correlacionar el PCAP con registros y archivos del equipo afectado.
 
 ## Máquina resuelta
 
